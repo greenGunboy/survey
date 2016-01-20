@@ -54,7 +54,7 @@
 			$stmt = $dbh->prepare($sql);
 			// INSERT文を実行
 			$stmt->execute();
-
+			// 一覧を表示させる為のループ
 			while(1){
 				$rec = $stmt->fetch(PDO::FETCH_ASSOC);
 				if($rec==false){
